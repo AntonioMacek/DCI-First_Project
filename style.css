@@ -1,0 +1,469 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222629;
+  font-family: "Roboto", sans-serif;
+}
+
+.content {
+  width: 100%;
+  min-height: 95vh;
+  border-bottom: solid 0.5px #ffffff98;
+}
+
+.banner {
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+
+header {
+  padding-left: 3em;
+  padding-bottom: 2em;
+}
+
+header h1 {
+  color: #00ff94;
+  font-family: "Yeseva One", cursive;
+  font-size: 190px;
+  font-weight: 200;
+  text-shadow:4px 3px #3d3c3c93
+}
+
+.about_me {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about_me h2 {
+  color: #00ff94;
+  font-family: "Yeseva One", cursive;
+  font-size: 48px;
+  font-weight: 200;
+  padding-bottom: 3rem;
+}
+
+.about_me p {
+  color: #c5c5c5;
+  font-size: 25px;
+  font-family: "Vollkorn", serif;
+  line-height: 1.5em;
+  /* height: 350px; */
+  max-width: 75%;
+  font-weight: 400;
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-left: 10em;
+  padding-right: 10em;
+  position: relative;
+}
+
+.box {
+  height: 185px;
+  width: 185px;
+  border: solid #c5c5c5fe 1px;
+  border-radius: 4px;
+  position: absolute;
+  background-color: #222629;
+}
+
+.top_left {
+  top: 0;
+  left: 0;
+  margin-left: 160px;
+  transform-origin: center;
+  transition: 1000ms;
+}
+
+.top_right {
+  top: 0;
+  right: 0;
+  margin-right: 160px;
+  transform-origin: center;
+  transition: 800ms;
+}
+
+.bottom_left {
+  bottom: 0;
+  left: 0;
+  margin-left: 160px;
+  transform-origin: center;
+  transition: 800ms;
+}
+
+.bottom_right {
+  bottom: 0;
+  right: 0;
+  margin-right: 160px;
+  transform-origin: center;
+  transition: 1000ms;
+}
+
+.skills_tech {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.content:hover .top_left {
+  transform: translateY(-100%) rotate(90deg);
+}
+
+.content:hover .top_right {
+  transform: translateY(200%);
+}
+.content:hover .bottom_left {
+  transform: translateY(-200%);
+}
+.content:hover .bottom_right {
+  transform: translateY(100%) rotate(90deg);
+}
+
+.skills_tech h2 {
+  color: #00ff94;
+  font-family: "Yeseva One", cursive;
+  font-size: 48px;
+  font-weight: 200;
+  padding-bottom: 3rem;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills_tech p {
+  color: #c5c5c5;
+  font-size: 25px;
+  font-family: "Vollkorn", serif;
+  text-align: justify;
+  line-height: 1.5em;
+  width: 50%;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.skills_tech ul {
+  color: #c5c5c5;
+  font-size: 25px;
+  font-family: "Vollkorn", serif;
+  width: 50%;
+  padding-left: 1em;
+}
+
+.skills_tech nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 8em;
+}
+
+.skills_tech nav ul {
+  display: flex;
+  justify-content: space-around;
+  color: #c5c5c5;
+  list-style-type: none;
+  font-size: 25px;
+  font-family: "Vollkorn", serif;
+  width: 50%;
+  margin-left: 1em;
+}
+
+.logos {
+  padding-left: 0;
+}
+
+.logos li a {
+  font-family: "Yeseva One", cursive;
+  font-size: 34px;
+  text-decoration: none;
+  color: #c5c5c5;
+}
+
+.pimpek {
+  padding-left: 10em;
+  width: 70%;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  width: 100%;
+  padding-top: 4em;
+  padding-left: 3em;
+}
+
+footer h2 {
+  color: #00ff94;
+  font-family: "Yeseva One", cursive;
+  font-size: 38px;
+  font-weight: 200;
+  text-shadow: 0 0 10px #0fa;
+}
+
+footer a {
+  font-family: "Yeseva One", cursive;
+  font-size: 38px;
+  text-decoration: none;
+  color: #c5c5c5;
+}
+
+.section1 img {
+  border-radius: 4px;
+  box-shadow: 10px 5px 5px #00ff9523;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #222629;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff94;
+}
+
+a:hover {
+  color: whitesmoke;
+  text-shadow: white 1px 0 4px;
+  transition: 400ms;
+}
+
+li a:hover {
+  color: whitesmoke;
+  text-shadow: white 1px 0 4px;
+}
+
+.signature {
+  width: 350px;
+  height: 280px;
+}
+
+.github_ {
+  padding-right: 10rem;
+}
+.signature_position {
+  margin-left: auto;
+}
+
+@media (min-width: 300px) and (max-width: 680px) {
+  .banner {
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+
+  .about_me {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .about_me h2 {
+    font-size: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .about_me p {
+    height: auto;
+    max-width: 100%;
+    font-size: 16px;
+  }
+  .section1 {
+    padding-left: 1em;
+    padding-right: 1em;
+    align-items: center;
+  }
+  .section1 img {
+    width: 100%;
+    height: auto;
+  }
+  .box {
+    display: none;
+  }
+  .top_left,
+  .top_right,
+  .bottom_left,
+  .bottom_right {
+    display: none;
+  }
+
+  .skills_tech h2 {
+    font-size: 30px;
+    padding-bottom: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+  .skills_tech p {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .skills_tech ul {
+    padding-left: 4rem;
+  }
+
+  .skills_tech ul li {
+    text-align: left;
+  }
+
+  .skills_tech nav ul {
+    justify-content: center;
+    margin-left: 0;
+    max-width: 90vw;
+  }
+  .logos li a {
+    font-size: 20px;
+    padding-right: 1em;
+  }
+  .pimpek {
+    padding-left: 1em;
+    width: 100%;
+  }
+
+  footer {
+    padding: 1em;
+  }
+
+  footer h2 {
+    font-size: 23px;
+  }
+  footer a {
+    font-size: 23px;
+  }
+
+  .signature {
+    display: none;
+  }
+
+  .contactme {
+    padding: 0.2em;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 1300px) {
+  .banner {
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+  }
+
+  header h1 {
+    font-size: 100px;
+  }
+
+  .about_me {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .about_me h2 {
+    font-size: 46px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .about_me p {
+    height: auto;
+    max-width: 100%;
+    font-size: 22px;
+  }
+  .section1 {
+    padding-left: 1em;
+    padding-right: 1em;
+    align-items: center;
+  }
+  .section1 img {
+    width: 100%;
+    height: auto;
+  }
+  .box {
+    display: none;
+  }
+  .top_left,
+  .top_right,
+  .bottom_left,
+  .bottom_right {
+    display: none;
+  }
+
+  .skills_tech h2 {
+    font-size: 46px;
+    padding-bottom: 3rem;
+    width: 100%;
+    text-align: center;
+  }
+  .skills_tech p {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .skills_tech ul {
+    padding-left: 4rem;
+  }
+
+  .skills_tech ul li {
+    text-align: left;
+  }
+
+  .skills_tech nav ul {
+    justify-content: center;
+    margin-left: 0;
+    max-width: 90vw;
+  }
+  .logos li a {
+    font-size: 24px;
+    padding-right: 1em;
+  }
+  .pimpek {
+    padding-left: 1em;
+    width: 100%;
+  }
+
+  footer {
+    padding: 1em;
+  }
+
+  footer h2 {
+    font-size: 32px;
+  }
+  footer a {
+    font-size: 28px;
+  }
+
+  .signature {
+    display: none;
+  }
+
+  .contactme {
+    padding: 0.5em;
+  }
+}
+
+/* Colors: Background: #222629
+            big-Text: #00FF94
+            normal-text: #C5C5C5
+            Border: #ffffff98
+            */
+
+/* font-family: 'Vollkorn', serif;
+font-family: 'Yeseva One', cursive;*/
